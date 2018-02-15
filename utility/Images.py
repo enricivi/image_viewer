@@ -12,7 +12,7 @@ class ImageListModel(QAbstractListModel):
     def insertRows(self, paths=list(), parent=QModelIndex()):
         im = self.read_images(paths)
         self.beginInsertRows(parent, len(self.images), len(im))
-        self.images += self.read_images(paths)
+        self.images += im
         self.endInsertRows()
         return True
 
