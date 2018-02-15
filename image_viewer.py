@@ -81,9 +81,9 @@ class ImViewer(QMainWindow):
     def __get_exif(self):
         item = self.ui.listView.selectionModel().selectedIndexes()
         if (len(item) != 0): 
-        	exif = self.model.get_exif(item[0].row())
-        	exif_viewer = ExifViewer(exif, self)
-        	exif_viewer.show()
+            exif = self.model.get_exif(item[0].row())
+            exif_viewer = ExifViewer(exif, self)
+            exif_viewer.show()
 
 
 if __name__ == "__main__":
@@ -91,5 +91,3 @@ if __name__ == "__main__":
     im_viewer = ImViewer(ImageListModel())
     im_viewer.show()
     sys.exit(app.exec_())
-
-
