@@ -36,7 +36,7 @@ class cQLabel(QtWidgets.QLabel):
             nh = self.pixmap().height() + dh
             # drawing image
             self.setPixmap(stored_pixmap.scaled(nw, nh, AspectRatioMode, QtCore.Qt.SmoothTransformation), False)
-            # avoiding image smaller that min_size (according to orientation)
+            # avoiding image smaller than min_size (according to orientation)
             if (self.pixmap().width() > self.pixmap().height()):
                 if (self.pixmap().width() < min_size):
                     AspectRatioMode = QtCore.Qt.KeepAspectRatioByExpanding
