@@ -40,10 +40,12 @@ class cQLabel(QtWidgets.QLabel):
             if (self.pixmap().width() > self.pixmap().height()):
                 if (self.pixmap().width() < min_size):
                     AspectRatioMode = QtCore.Qt.KeepAspectRatioByExpanding
+                    nh = max(nh, 1)	# avoiding zero height
                     self.setPixmap(stored_pixmap.scaled(min_size, nh, AspectRatioMode, QtCore.Qt.SmoothTransformation), False)
             else:
                 if (self.pixmap().height() < min_size):
                     AspectRatioMode = QtCore.Qt.KeepAspectRatioByExpanding
+                    nw = max(nw, 1) # avoiding zero width
                     self.setPixmap(stored_pixmap.scaled(nw, min_size, AspectRatioMode, QtCore.Qt.SmoothTransformation), False)
 
     def setPixmap(self, a0: QtGui.QPixmap, save=True):
