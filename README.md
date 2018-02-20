@@ -19,5 +19,7 @@ python3 image_viewer.py
 * To **show the EXIF tags** select an image from the list and click on *View -> Exif* (shortcut CTRL+E)
 
 ## Preview
-
-
+[MainView](https://github.com/enry12/ImageViewer/tree/master/images_readme/MainView.png)
+[SomeImages](https://github.com/enry12/ImageViewer/tree/master/images_readme/SomeImages.png)
+[EXIF](https://github.com/enry12/ImageViewer/tree/master/images_readme/EXIF.png)
+[GPSLink](https://github.com/enry12/ImageViewer/tree/master/images_readme/GPS.png)
