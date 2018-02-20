@@ -23,5 +23,5 @@ python3 image_viewer.py
 ## Preview
 ![alt text](images_readme/MainView.png "Main View")
 ![alt text](images_readme/SomeImages.png "Main View with some Images")
-<img src="images_readme/EXIF.png" alt="EXIF tag view" width="434">
-<img src="images_readme/GPS.png" alt="GPS tag view" width="434">
+<img src="images_readme/EXIF.png" alt="EXIF tag view" width="435">
+<img src="images_readme/GPS.png" alt="GPS tag view" width="435">
